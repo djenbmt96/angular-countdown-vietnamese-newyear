@@ -1,0 +1,33 @@
+<div *ngIf="isMobile" id="body-inner" class="body-inner">
+</div>
+<div class="content d-flex justify-content-center align-items-center">
+	<div class="countdown-section">
+		<div class="row">
+			<div class="col-12">
+				<div class="countdown-header">
+					<h2>{{name}}</h2>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="countdown-body d-flex justify-content-center">
+					<div id="clock" class="time-count">
+						<div class="time-entry days"><span>{{days}}</span> Days</div>
+						<div class="time-entry hours"><span>{{hours}}</span> Hours</div>
+						<div class="time-entry minutes"><span>{{minutes}}</span> Minutes</div>
+						<div class="time-entry seconds"><span>{{seconds}}</span> Seconds</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="countdown-footer d-flex justify-content-center">
+					TIME TO CELEBRATE
+				</div>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="!isMobile" class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/KW2JfdHkW9o?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=KW2JfdHkW9o" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
